@@ -7,10 +7,10 @@ chk.addEventListener('change', () => {
   
 
   if (money.classList.contains('dark')) {
-    document.getElementById('numero').innerHTML = 'dolar';
+    document.getElementById('cash').innerHTML = 'U$';
     dolar();
   }else {
-    document.getElementById('numero').innerHTML = 'real';
+    document.getElementById('cash').innerHTML = 'R$';
     real();
   }
 })
@@ -29,7 +29,7 @@ async function conversao () {
   const api_url = `https://api.binance.com/api/v3/ticker/price?symbol=${moeda}${chave}`
   const resposta = await fetch(api_url);
   const dados = await resposta.json();
-  document.getElementById('numero').innerHTML = dados.price 
+  document.getElementById('numero').innerHTML = parseFloat(dados.price).toFixed(2)
 }
 
 //CHAVE DOLAR/REAL
