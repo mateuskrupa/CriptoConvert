@@ -16,7 +16,7 @@ Meu maior desafio nesse projeto foi fazer a chave de conversão dólar/real func
 DESIGN ANTES DA IMPLEMENTAÇÃO
 <img src="img/readme/desktop_design.png">
 
-<img src="img/readme/desktop_mobile.png">
+<img src="img/readme/mobile_design.png">
 
 
 
